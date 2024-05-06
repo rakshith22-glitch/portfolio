@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import lovetoair from "../../Assets/Projects/lovetoair.png";
+import pickleballho from "../../Assets/Projects/pickleballho.png";
 import bullsvsbears from "../../Assets/Projects/bullsvsbears.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 function Projects() {
@@ -23,7 +24,7 @@ function Projects() {
               isBlog={false}
               title="LovetoAir"
               description="A Review Website where buyers can air their grievances about their sellers. 1) CREATED DATABSE SCHEMA FROM SCRATCH USING MYSQL WORKBENCH 2)BACKEND-Node.js 3)FRONTEND-React "
-              link="https://lovetoair.herokuapp.com/"
+              link="https://lovetoair.com/"
             />
           </Col>
 
@@ -47,17 +48,17 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={lovetoair}
+              imgPath={pickleballho}
               isBlog={false}
               title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              description="I created this site for my friend on Square Space"
+              link="https://www.pickleballho.com/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+         {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
