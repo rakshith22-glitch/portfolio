@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -10,7 +9,7 @@ import {
   DiAngularSimple,
   DiJava,
 } from "react-icons/di";
-import { SiDjango, SiNextdotjs, SiMysql } from "react-icons/si";
+import { SiDjango, SiMysql } from "react-icons/si";
 
 function Techstack() {
   return (
