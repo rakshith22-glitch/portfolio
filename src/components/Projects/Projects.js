@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import lovetoair from "../../Assets/Projects/lovetoair.png";
-import pickleballho from "../../Assets/Projects/pickleballho.png";
+import ho from "../../Assets/Projects/ho.png";
+import tao from "../../Assets/Projects/tao.png";
 import bullsvsbears from "../../Assets/Projects/bullsvsbears.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 function Projects() {
@@ -28,12 +29,32 @@ function Projects() {
             />
           </Col>
 
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ho}
+              isBlog={false}
+              title="Pickleball Ho!"
+              description="I built this site for my good friend on Square Space"
+              link="https://www.pickleballho.com/"
+            />
+          </Col>
+
+         <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tao}
+              isBlog={false}
+              title="Ai For Social Good"
+              description="This is a simple Shopify Merch Store for Crypto Currency $TAO, Built and modified existing free template and added credit, debit and crypto payment methods"
+              link="https://taomerch.com/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bullsvsbears}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="BullsVSBears"
+              description="This is an Option-Sweep Website,Built on React.js API's from Bloomberg.com, cleaned and modified data on backend using python. Node.jS Server, Postgres for storing userdata, Currently down but you can check the code in my github"
               link="https://bullsvsbears.herokuapp.com/"
             />
           </Col>
@@ -42,42 +63,12 @@ function Projects() {
             <ProjectCard
               imgPath={portfolio}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Portfolio"
+              description="Portfolio Website"
               link="https://github.com/rakshith22-glitch/portfolio"
             />
           </Col>
 
-           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={pickleballho}
-              isBlog={false}
-              title="Plant AI"
-              description="I created this site for my friend on Square Space"
-              link="https://www.pickleballho.com/"
-            />
-          </Col>
-
-         {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-            />
-          </Col> */}
         </Row>
       </Container>
     </Container>
